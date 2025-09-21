@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors</title>
+    <style>
+       /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        input[type="password"] {
+            border: 2px solid peru;
+        }
+        /* Child Selector */
+        ul>li {
+            color: green;
+            font-size: 20px;
+        }
+         ul>li:first-child {
+            color: green;
+            background-color: lightsalmon;
+            font-size: 20px;
+        }
+        /* Sibling Selector */
+        h1+h2 {
+            color: yellow;
+        }
+        /* Pseudo Classes */
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+   <!-- Attribute Selector -->
+    <input type="text" placeholder="Name"><br><br>
+    <input type="text" placeholder="Father name"><br><br>
+    <input type="text" placeholder="Mother Name"><br><br>
+    <input type="text" placeholder="School Name"><br><br>
+    <input type="password" placeholder="Old password">
+    <input type="password" placeholder="new password">
+    <input type="password" placeholder="confirm password">
+    <!-- child Selector -->
+       <ul>
+        <li>First Child</li>
+        <li>Second Child</li>
+        <li>Third Child</li>
+        <p>NOT a child</p>
+            </ul>
+    <!-- siblings Selector -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3><!-- Note: h3 is not affected by the sibling selector -->
+    <!-- pseudo classes -->
+    <a href="#">I like coding</a><br>
+</body>
+
+</html>
